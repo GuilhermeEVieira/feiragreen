@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.div-main {
+    min-width: 480px;
+    max-width: 1500px;
+    margin: auto;
+}
+/*---------------cabeçario---------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    padding: 20px 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo span {
+    font-weight: 700;
+}
+ /*menu*/
+
+#area-menu {
+    padding: 15px;
+    text-align: center;
+}
+
+#area-menu a{
+    text-decoration: none;
+    color: #12AF50;
+    padding: 8px 12px;
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+#area-menu a:hover{
+    text-decoration: underline;
+    color: #f5f2f2;
+    background-color: #12AF50;
+    border-radius: 5px;
+} /*menu*/
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/*-----------fim-cabeçario---------*/
+/*-------Roda-Pé-------*/
+footer {
+    
+    background-color: #eee;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ddd;
+    padding: 20px 5%;
+}
+
+.footer-top--left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-top--left a {
+    color: #161616;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-top--left a:hover {
+    text-decoration: underline;
+}
+
+.footer-top--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-top--right span {
+    color: #161616;
+    font-weight: 700;
+}
+
+.footer-news-letter {
+    display: flex;
+    align-items: center;
+}
+
+.footer-input {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.footer-button {
+    width: 90px;
+    height: 40px;
+
+    color: white;
+    font-weight: 700;
+
+    border: 1px solid #eee;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 40px;
+    background-color: #12AF50;
+
+    transition: 0.2s;
+}
+
+.footer-button:hover {
+  background-color: #12AF50;
+
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 4px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+
+    border-top: 2px solid #ddd;
+}
+
+.footer-bottom--left, .footer-bottom--right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer p {
+    padding: 20px;
+    color: rgb(18, 18, 18);
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.footer-image {
+    height: 20px;
+}
+/*------Fim-Roda-Pé-------*/
+/* Formatação do menu */
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #12AF50;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#div-main a:link, #area-cabecalho a:visited{
+    color: #f5f2f2;
+    padding: 8px 12px;
+}
+#area-cabecalho a:hover{
+    color: #12AF50;
+    background-color: #f5f2f2;
+    text-decoration: none;
+    
+}
+
