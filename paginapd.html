@@ -18,31 +18,42 @@
 </head>
 
 <body>
-    <div class="div-main">
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="assets/imagens/logoverde.png" alt="" width="200"></a>
-
-            </div>
-            <div id="area-menu">
-                <a href="">Frutas</a>
-                <a href="">Verduras</a>
-                <a href="">Hortaliças</a>
-                <a href="">Legumes</a>
-                <a href="">Outros</a>
-            </div>
-            <nav>
-                <img src="assets/imagens/pesquisa.png" alt="" width="20">
-                <a href="login.html"><img src="assets/imagens/usuario.png" alt="" width="20"></a>
-                <a href="carrinho.html"><img src="assets/imagens/carrinho-carrinho.png" alt="" width="20"></a>
-            </nav>
-        </header>
+<!--cabeçario-->
+<header>
+    <div  class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="assets/imagens/LogoFeiraGreen.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" 
+                    aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="nav-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="frutas-menu" href="frutas.html">Frutas</a>                           
+                    <a class="nav-item nav-link" id="verdura-menu" href="verduras.html">Verduras</a>                        
+                    <a class="nav-item nav-link" id="hortalica-menu" href="hortaliças.html">Hortaliças</a>                            
+                    <a class="nav-item nav-link" id="legums-menu" href="Legumes.html">Legumes</a>                            
+                    <a class="nav-item nav-link" id="outros-menu" href="outros.html">Outros</a>
+                </div>
+                </div>
+                <div class="justify-content-end" id="nav-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href=""><img src="assets/imagens/pesquisa.png" alt="Search" width="20"></a>
+                    <a class="nav-item nav-link" href="login.html"><img src="assets/imagens/usuario.png" alt="User" width="20"></a>
+                    <a class="nav-item nav-link" href="carrinho.html"><img src="assets/imagens/carrinho-carrinho.png" alt="Cart" width="20"></a>
+                </div>
+            </div> 
+        </nav>
     </div>
+</header>
+<!--fim-cabeçario-->
     <hr>
     <div class="item-container">
         <div class="item-box">
             <div class="image-box">
-                <img src="/assets/imagens/abacaxi.jpg" alt="Abacaxi">
+                <img src="./assets/imagens/abacaxi.jpg" alt="Abacaxi">
             </div>
             <div class="text-container">
                 <div class="category">Frutas</div>

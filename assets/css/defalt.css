@@ -1,65 +1,68 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-family: 'Lato', sans-serif;
+main{
+    padding: 10px 70px;
 }
 
 body {
     background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+.row{
+    margin: 0;
 }
 
-
-.div-main {
-    min-width: 480px;
-    max-width: 1500px;
-    margin: auto;
+.container {
+    padding: 70px 0;
+}
+p, li{
+    color: #ddd;
+    font-size: 14px;
 }
 /*---------------cabeçario---------*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 100px;
-    padding: 20px 5%;
+header, .navbar{
+    background-color: #f5f2f2;
+}
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0; 
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+#logo {
+    width: 250px;
 }
-.logo span {
-    font-weight: 700;
+.navbar-brand{
+    padding: 0;
+    color: #f5f2f2;
 }
- /*menu*/
-
-#area-menu {
-    padding: 15px;
-    text-align: center;
+.navbar-brand:hover{
+    color: #f5f2f2;
 }
 
-#area-menu a{
-    text-decoration: none;
+#nav-links a {
     color: #12AF50;
-    padding: 8px 12px;
-    border-radius: 5px; 
-    transition: background-color 0.3s, color 0.3s; 
 }
-
-#area-menu a:hover{
+#nav-container .nav-link:hover {
     text-decoration: underline;
     color: #f5f2f2;
     background-color: #12AF50;
     border-radius: 5px;
-} /*menu*/
-
-nav {
+}
+#nav-container .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 30px;
+}
+#nav-container .justify-content-end {
+    justify-content: center;
+}
+#nav-container .navbar-nav img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.navbar-expand-lg .navbar-nav .navlink{
+    padding: 1rem .8rem;
+}
+#nav-container .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='green' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Change the color to the desired color */
 }
 
 /*-----------fim-cabeçario---------*/
@@ -174,27 +177,32 @@ footer p a:hover {
     height: 20px;
 }
 /*------Fim-Roda-Pé-------*/
-/* Formatação do menu */
-a{
-    text-decoration: none;
-}
 
-a:link, a:visited{
-    color: #12AF50;
-}
 
-a:hover{
-    text-decoration: underline;
-}
 
-#div-main a:link, #area-cabecalho a:visited{
-    color: #f5f2f2;
-    padding: 8px 12px;
+@media (min-width: 390px)and(max-width: 575.98px) {
+body {
+    font-size: 1.05em;
 }
-#area-cabecalho a:hover{
-    color: #12AF50;
-    background-color: #f5f2f2;
-    text-decoration: none;
     
+.footer-top {
+    padding: 25px;
 }
-
+    
+    .footer-top .navbar-nav {
+    flex-wrap: wrap;
+    }
+    
+    .footer-input {
+    width: 100%;
+    }
+    
+    .footer-button {
+    width: 100%;
+    margin-top: 10px;
+    }
+    
+    .footer-image {
+    margin-bottom: 15px;
+    }
+}
